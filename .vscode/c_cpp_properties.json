@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/nanomsg_pub_sub/include"
+                "${workspaceFolder}/nanomsg_pub_sub/include",
+                "/usr/local/include/nanomsg"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

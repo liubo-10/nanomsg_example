@@ -8,15 +8,15 @@ project(nanomsg_test)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    /usr/local/include/nanomsg
     )
 
     
 # Find requirements
 set(nanomsg_DIR /home/edy/my_project/nanomsg/nano_install/lib)
 
-if(NOT nanomsg_FOUND)
+
 find_package(nanomsg CONFIG REQUIRED)
-endif()
 
 
 
