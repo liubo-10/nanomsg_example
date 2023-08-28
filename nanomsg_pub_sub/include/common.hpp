@@ -19,7 +19,7 @@ string kb_message(int n) {
     string tmp;
     n = n * 1024;
     for (int i = 0; i < n; i++) {
-        char c = 'A' + n % 26;
+        char c = 'A' + i % 26;
         tmp += c;
     }
     return tmp;

@@ -43,6 +43,7 @@ int main() {
             char *buf;
             int recv_len = 0;
             recv_len = nn_recv(sub_sock, &buf, NN_MSG, 0);
+            std::cout << "Message: " << buf << std::endl;
             nn_freemsg(buf);
             if (recv_len < 0) {
                 std::cout << "recv message failed" << std::endl;
