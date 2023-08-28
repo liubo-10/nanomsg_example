@@ -1,0 +1,38 @@
+gcc pipeline.c -lnanomsg -o pipeline -I /home/edy/mydir/git/nng/nanomsg-1.2/src/ -L /home/edy/mydir/git/nng/nano_install/
+
+
+
+gcc nanomsg_pubsub.c -lnanomsg -o nanomsg_pubsub -I /home/edy/mydir/git/nng/nanomsg-1.2/src/ -L /home/edy/mydir/git/nng/nano_install/
+
+
+
+gcc -o nanomsg_pubsub nanomsg_pubsub.c -lnanomsg -lpthread
+
+
+
+https://git.zerozero.cn/cheerios/tools/sdks/nanomsg_sdk/tree/h130_compile
+
+参考这个试着去交叉编译fastDDS
+
+
+指令说明：
+
+-I xxx:指定头文件路径。
+
+-L xxx:指定库路径。
+
+-lnanomsg:链接动态库nanomsg.so。
+
+pipeline.c 编译的文件
+
+pipeline 编译后生成的文件名字
+
+第一个路径/home/spring/Public/nanomsg-1.1.5/build/nanomsg_x86_lib/include/是头文件路径
+
+第二个路径/home/spring/Public/nanomsg-1.1.5/build/nanomsg_x86_lib/include/是库文件路径
+
+注意:在第六步安装时候已经明确指出安装在nanomsg_x86_lib这个文件夹内。
+
+
+
+
