@@ -8,10 +8,11 @@ project(nanomsg_test)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/include
+    /home/edy/my_project/nanomsg/nanomsg-1.2/src   
     /usr/local/include/nanomsg
     )
 
-    
+ 
 # Find requirements
 set(nanomsg_DIR /home/edy/my_project/nanomsg/nano_install/lib)
 
@@ -38,6 +39,6 @@ message(STATUS "Configuring nanomsg_test publisher/subscriber example...")
 
 
 add_executable(nanomsg_test src/nanomsg_pub.cpp)
-
+target_link_libraries(nanomsg_test nanomsg)
 
 
