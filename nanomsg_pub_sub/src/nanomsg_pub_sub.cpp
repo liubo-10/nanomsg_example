@@ -1,3 +1,9 @@
+/*
+
+nanomsg_pub_sub.cpp
+
+
+*/
 #include <iostream>
 #include <string.h>
 #include <thread>
@@ -12,7 +18,9 @@
 using namespace std;
 
 int main() {
-    int sub_sock, pub_sock;
+    int pub_sock; // 发布
+    int sub_sock; // 订阅
+
     int rv, rvt;
 
     pub_sock = nn_socket(AF_SP, NN_PUB);
@@ -57,3 +65,5 @@ int main() {
 
     return 0;
 }
+
+
